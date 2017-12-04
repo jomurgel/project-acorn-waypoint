@@ -1,4 +1,4 @@
-<center>![Acorn Logo](https://jomurgel.com/cdn/acorn.png)</center>
+<center><img src="https://jomurgel.com/cdn/acorn.png" alt="Acorn Logo"></center>
 
 # Project Acorn Theme
 A theme waypoint between WordPress, its REST API and the [https://github.com/jomurgel/project-acorn-ssr](Project Acorn Vue SSR).
