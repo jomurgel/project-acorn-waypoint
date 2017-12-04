@@ -26,10 +26,9 @@ It is a SUPER barebones theme intended ONLY to be used to give some extra functi
 - Can use `/wp-api-menus/v2/menus/id` or `wp-api-menus/v2/menus/slug` to get individual menus data.
 
 ## Development
-Run `npm install` to install dependencies.
-Run `gulp watch` to run with BrowserSync + active compiling.
-
-`gulp icons` to compile SVG Icons.
-`gulp styles` to compile, autoprefix, and minify main `style.scss` and `colors.scss`.
+- Install: `npm install` to install dependencies.
+- Run `gulp watch` to run with BrowserSync + active compiling.
+- Run `gulp icons` to compile SVG Icons.
+- Run `gulp styles` to compile, autoprefix, and minify main `style.scss` and `colors.scss`.
 
 
