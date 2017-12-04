@@ -1,0 +1,101 @@
+//--------------------------------------------------------------
+// Global Theme Styles
+//--------------------------------------------------------------
+
+//-----------------------------------------
+// Body
+//-----------------------------------------
+body {
+	background-color: $white;
+	background-image: $secondary-gradient;
+	min-height: calc(100vh - 100px);
+	padding: 50px 0;
+}
+
+.site-header {
+	margin-bottom: 50px;
+
+	.home-link {
+
+		svg {
+			color: $black;
+			transition: color 0.3s ease-in-out;
+
+			&:hover,
+			&:active,
+			&:focus {
+				color: $primary;
+			}
+		}
+	}
+
+	h1 {
+		margin-bottom: 0;
+	}
+
+	svg {
+		height: 100px;
+		width: 90px;
+
+		&.icon {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.site-footer {
+	margin-top: 50px;
+}
+
+//-----------------------------------------
+// Links
+//-----------------------------------------
+a {
+	color: $primary;
+	transition: color 0.3s ease-in-out;
+
+	.splash-page & {
+		color: $white;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $black;
+	}
+}
+
+//-----------------------------------------
+// Code Blocks
+//-----------------------------------------
+.code-output {
+
+	h2 {
+		margin-bottom: 5px;
+	}
+
+	.code-block {
+		margin-bottom: 25px;
+
+		code {
+			display: table;
+			margin-bottom: 10px;
+			white-space: inherit;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+//-----------------------------------------
+// Post/Page Template
+//-----------------------------------------
+.post-header {
+	margin-bottom: 50px;
+}
+
+.post-footer {
+	margin-top: 50px;
+}

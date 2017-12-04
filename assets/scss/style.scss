@@ -1,0 +1,25 @@
+/*
+Theme Name: Project Acorn
+Author: jomurgel
+Description: Vue.js theme for WordPress
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: acorn-theme
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+// Import Sanatize Reset: https://jonathantneal.github.io/sanitize.css/
+@import 'node_modules/sanitize.scss/sanitize';
+
+// Import Skeleton Framework: https://www.npmjs.com/package/skeleton-scss/
+@import 'node_modules/skeleton-scss/scss/skeleton';
+
+@import 'functions/index';
+
+// Import wordpress default media styles (for previews).
+@import 'defaults/index';
+
+@import 'theme';
+@import 'splash';

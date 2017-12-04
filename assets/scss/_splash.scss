@@ -1,0 +1,49 @@
+//--------------------------------------------------------------
+// Optional Splash Page Styles
+//--------------------------------------------------------------
+
+//-----------------------------------------
+// Body
+//-----------------------------------------
+.splash-page {
+	background-color: $primary; // fallback.
+	background-image: $primary-gradient;
+	color: $white;
+	min-height: 100vh;
+	padding: 0;
+
+	.flex-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 100vh;
+		text-align: center;
+	}
+
+	.site-header {
+		margin-bottom: 0;
+
+		h1 {
+			margin-bottom: 0;
+		}
+
+		h2 {
+			@extend h4;
+		}
+	}
+
+	button, .button {
+		border: 1px solid $white;
+		color: $white;
+		transition: border 0.3s ease-in-out;
+
+		&:hover {
+			border: 1px solid $gray;
+		}
+	}
+
+	.site-footer {
+		margin-top: 0;
+	}
+}
+
