@@ -17,7 +17,7 @@ It is a SUPER barebones theme intended ONLY to be used to give some extra functi
 - Registers WordPress menu: `Main Menu`.
 - Style Reset with [https://jonathantneal.github.io/sanitize.css/](sanitize.scss).
 - Base styles with [http://getskeleton.com/](skeleton.scss).
-- gulpfile.js with style compiling + svg icon compiling.
+- gulpfile.js with style compiling + svg icon compiling + [https://www.browsersync.io/](BrowserSync).
 - custom acorn color scheme — set by default.
 
 ### Menu Endpoints
@@ -27,3 +27,9 @@ It is a SUPER barebones theme intended ONLY to be used to give some extra functi
 
 ## Development
 Run `npm install` to install dependencies.
+Run `gulp watch` to run with BrowserSync + active compiling.
+
+`gulp icons` to compile SVG Icons.
+`gulp styles` to compile, autoprefix, and minify main `style.scss` and `colors.scss`.
+
+
