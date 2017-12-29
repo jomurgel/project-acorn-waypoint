@@ -1,4 +1,4 @@
-<center><img src="https://jomurgel.com/cdn/acorn.png" alt="Acorn Logo"></center>
+![acorn](https://user-images.githubusercontent.com/5230729/33617107-17ebf23c-d99c-11e7-8aa6-ec559bd23027.png)
 
 # Project Acorn Theme
 A theme waypoint between WordPress, its REST API and the [Project Acorn SSR](https://github.com/jomurgel/project-acorn-ssr).
@@ -31,4 +31,5 @@ It is a SUPER bare bones theme intended ONLY to be used to give some extra funct
 - Run `gulp icons` to compile SVG Icons.
 - Run `gulp styles` to compile, autoprefix, and minify main `style.scss` and `colors.scss`.
 
-
+## License
+[MIT](http://opensource.org/licenses/MIT)

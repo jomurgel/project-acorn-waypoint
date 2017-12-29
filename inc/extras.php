@@ -37,11 +37,16 @@ function acorn_theme_get_splash_options_value() {
  */
 function acorn_theme_redirect_to_admin() {
 
-	if ( ( ! is_user_logged_in() && false === acorn_theme_get_splash_options_value() && ! is_front_page() ) || ( ! is_user_logged_in() && ( is_404() || is_page() || is_archive() || is_single() || is_tag() || is_category() ) ) ) {
-
-		wp_redirect( wp_login_url(), 301 );
-		exit;
+	if ( is_user_logged_in() ) {
+		return;
 	}
+
+	if ( ! is_user_logged_in() && true === acorn_theme_get_splash_options_value() && is_home() ) {
+		return;
+	}
+
+	auth_redirect();
+	die();
 }
 add_action( 'template_redirect', 'acorn_theme_redirect_to_admin' );
 
