@@ -85,14 +85,14 @@ function acorn_theme_get_all_image_fields( $object, $field_name, $request ) {
 	}
 
 	// This is taken from WP_REST_Attachments_Controller::prepare_item_for_response().
-	$featured_image['id']            = $image_id;
-	$featured_image['alt']           = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
-	$featured_image['caption']       = $image->post_excerpt;
-	$featured_image['description']   = $image->post_content;
-	$featured_image['media_type']    = wp_attachment_is_image( $image_id ) ? 'image' : 'file';
-	$featured_image['media_details'] = wp_get_attachment_metadata( $image_id );
-	$featured_image['post']          = ! empty( $image->post_parent ) ? (int) $image->post_parent : null;
-	$featured_image['source_url']    = wp_get_attachment_url( $image_id );
+	$featured_image['id']          = $image_id;
+	$featured_image['alt']         = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+	$featured_image['caption']     = $image->post_excerpt;
+	$featured_image['description'] = $image->post_content;
+	$featured_image['media_type']  = wp_attachment_is_image( $image_id ) ? 'image' : 'file';
+	$featured_image['media']       = wp_get_attachment_metadata( $image_id );
+	$featured_image['post']        = ! empty( $image->post_parent ) ? (int) $image->post_parent : null;
+	$featured_image['source_url']  = wp_get_attachment_url( $image_id );
 
 	if ( empty( $featured_image['media_details'] ) ) {
 
