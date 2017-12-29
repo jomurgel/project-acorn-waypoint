@@ -3,12 +3,14 @@
  * Custom endpoints.
  *
  * @package Acorn Theme
+ * @since 1.0.0
  */
 
 /**
  * Get all registered menus
  *
  * @return array List of menus with slug and description
+ * @since 1.0.0
  */
 function acorn_theme_get_all_menus() {
 
@@ -47,8 +49,9 @@ function acorn_theme_get_all_menus() {
 /**
  * Adds object slug to items object.
  *
- * @param array $items.
+ * @param array $items menu items.
  * @return array new array with item slug.
+ * @since 1.0.0
  */
 function acorn_theme_get_menu_and_slug( $items ) {
 
@@ -77,6 +80,7 @@ function acorn_theme_get_menu_and_slug( $items ) {
  *
  * @param  array $data WP REST API data variable
  * @return object Menu's data with his items
+ * @since 1.0.0
  */
 function acorn_theme_get_menu_json_object_by_id( $data ) {
 
@@ -99,8 +103,9 @@ function acorn_theme_get_menu_json_object_by_id( $data ) {
 /**
  * Get menu data from by slug
  *
- * @param  array $data WP REST API data variable
+ * @param  array $data WP REST API data variable.
  * @return object Menu's data with his items
+ * @since 1.0.0
  */
 function acorn_theme_get_menu_json_object_by_slug( $data ) {
 
@@ -123,6 +128,8 @@ function acorn_theme_get_menu_json_object_by_slug( $data ) {
 
 /**
  * Setup rest_api_init.
+ *
+ * @since 1.0.0
  */
 add_action( 'rest_api_init', function() {
 
