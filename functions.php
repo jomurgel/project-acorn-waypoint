@@ -41,9 +41,10 @@ endif;
 require get_template_directory() . '/inc/scripts.php';
 
 /**
- * Setup Custom Menu Endpoints
+ * Setup Custom Endpoints
  */
 require get_template_directory() . '/inc/menu-endpoints.php';
+require get_template_directory() . '/inc/image-endpoints.php';
 
 /**
  * Custom functions that act independently of the theme templates.
