@@ -94,15 +94,15 @@ function acorn_theme_get_all_image_fields( $object, $field_name, $request ) {
 	$featured_image['post']        = ! empty( $image->post_parent ) ? (int) $image->post_parent : null;
 	$featured_image['source_url']  = wp_get_attachment_url( $image_id );
 
-	if ( empty( $featured_image['media_details'] ) ) {
+	if ( empty( $featured_image['media'] ) ) {
 
-		$featured_image['media_details'] = new stdClass;
+		$featured_image['media'] = new stdClass;
 
-	} elseif ( ! empty( $featured_image['media_details']['sizes'] ) ) {
+	} elseif ( ! empty( $featured_image['media']['sizes'] ) ) {
 
 		$img_url_basename = wp_basename( $featured_image['source_url'] );
 
-		foreach ( $featured_image['media_details']['sizes'] as $size => &$size_data ) {
+		foreach ( $featured_image['media']['sizes'] as $size => &$size_data ) {
 
 			$image_src = wp_get_attachment_image_src( $image_id, $size );
 
@@ -113,18 +113,18 @@ function acorn_theme_get_all_image_fields( $object, $field_name, $request ) {
 			$size_data['source_url'] = $image_src[0];
 		}
 
-	} elseif ( is_string( $featured_image['media_details'] ) ) {
+	} elseif ( is_string( $featured_image['media'] ) ) {
 
 		// This was added to work around conflicts with plugins that cause
 		// wp_get_attachment_metadata() to return a string.
-		$featured_image['media_details'] = new stdClass();
-		$featured_image['media_details']->sizes = new stdClass();
+		$featured_image['media'] = new stdClass();
+		$featured_image['media']->sizes = new stdClass();
 
 	} else {
 
-		$featured_image['media_details']['sizes'] = new stdClass;
+		$featured_image['media']['sizes'] = new stdClass;
 
 	}
 
-	return apply_filters( 'better_rest_api_featured_image', $featured_image, $image_id );
+	return apply_filters( 'acorn_theme_get_featured_image', $featured_image, $image_id );
 }
