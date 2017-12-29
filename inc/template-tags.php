@@ -111,14 +111,14 @@ function acorn_theme_display_dev_page() {
 		<div class="code-block">
 			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/posts' ); ?></code>
 			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/posts/id' ); ?></code>
-			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/posts/slug' ); ?></code>
+			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/posts/?slug=slug' ); ?></code>
 		</div><!-- .code-block -->
 
 		<h2><?php esc_html_e( 'Pages', 'acorn' ); ?></h2>
 		<div class="code-block">
 			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/pages' ); ?></code>
 			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/pages/id' ); ?></code>
-			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/pages/slug' ); ?></code>
+			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/pages/?slug=slug' ); ?></code>
 		</div><!-- .code-block -->
 
 		<h2><?php esc_html_e( 'Menus', 'acorn' ); ?></h2>
@@ -132,21 +132,21 @@ function acorn_theme_display_dev_page() {
 		<div class="code-block">
 			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/categories' ); ?></code>
 			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/categories/id' ); ?></code>
-			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/categories/slug' ); ?></code>
+			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/categories/?slug=slug' ); ?></code>
 		</div><!-- .code-block -->
 
 		<h2><?php esc_html_e( 'Tags', 'acorn' ); ?></h2>
 		<div class="code-block">
 			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/tags' ); ?></code>
 			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/tags/id' ); ?></code>
-			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/tags/slug' ); ?></code>
+			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp-json/wp/v2/tags/?slug=slug' ); ?></code>
 		</div><!-- .code-block -->
 
 		<h2><?php esc_html_e( 'Custom Post Types', 'acorn' ); ?></h2>
 		<div class="code-block">
 			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp/v2/types' ); ?></code>
 			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp/v2/types/id' ); ?></code>
-			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp/v2/types/slug' ); ?></code>
+			<code><?php echo esc_url( get_site_url() ) . esc_html( '/wp/v2/types/?slug=slug' ); ?></code>
 		</div><!-- .code-block -->
 
 		<a href="https://developer.wordpress.org/rest-api/reference/" target="_blank" class="button">
