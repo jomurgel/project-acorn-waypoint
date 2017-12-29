@@ -3,6 +3,8 @@
 # Project Acorn Theme
 A theme waypoint between WordPress, its REST API and the [Project Acorn SSR](https://github.com/jomurgel/project-acorn-ssr).
 
+<img src="https://img.shields.io/badge/version-1.0.1-green.svg" alt="Version 1.0.1" />
+
 ## What is this for?
 It is a SUPER bare bones theme intended ONLY to be used to give some extra functionality to our WordPress REST API waypoint and setup a few defaults and helpers along the way. This theme was built as a dev helper and not as a user-face or standard WordPress theme.  It is intended to be used along side my [Project Acorn SSR](https://github.com/jomurgel/project-acorn-ssr) or any SPA which utilizes the WordPress REST API.
 
@@ -19,6 +21,7 @@ It is a SUPER bare bones theme intended ONLY to be used to give some extra funct
 - Base styles with [skeleton.scss](http://getskeleton.com/).
 - gulpfile.js with style compiling + svg icon compiling + [BrowserSync](https://www.browsersync.io/).
 - custom acorn color scheme — set by default.
+- Bakes featured image data into the REST API. forked from [BraadMartin](https://github.com/BraadMartin/better-rest-api-featured-images) with a few updates.
 
 ### Menu Endpoints
 - Custom Menu Endpoints in `inc/menu-endpoints.php`.
