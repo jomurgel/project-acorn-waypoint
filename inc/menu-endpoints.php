@@ -19,8 +19,17 @@ function acorn_theme_get_all_menus() {
 
 	foreach ( get_nav_menu_locations() as $slug => $id ) {
 
+		// Get currently mentioned menu.
+		$menu = wp_get_nav_menu_items( $id );
+
+		// Get modified date from first menu item.
+		$date = $menu[0]->post_modified;
+
 		// Setup Anonymous Object.
-		$object              = new stdClass;
+		$object = new stdClass;
+
+		// Add Modified Date.
+		$object->menu_modified = $date;
 
 		// Get slug and Description.
 		$object->slug  = $slug;
