@@ -28,7 +28,7 @@ wp_footer(); ?>
 						</a>
 
 						<a href="https://github.com/jomurgel/project-acorn-ssr" target="_blank" class="button">
-							<?php esc_html_e( 'Download Project Acorn SPA', 'acorn' ); ?>
+							<?php esc_html_e( 'Download Project Acorn SSR', 'acorn' ); ?>
 						</a>
 
 						<h6><small>
