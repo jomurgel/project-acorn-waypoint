@@ -226,7 +226,7 @@ gulp.task( 'svg', [ 'clean:icons' ], () =>
  * Delete the theme's .pot before we create a new one.
  */
 gulp.task( 'clean:pot', () =>
-  del( [ 'languages/_s.pot' ] )
+  del( [ 'languages/acorn.pot' ] )
 );
 
 /**
@@ -239,10 +239,10 @@ gulp.task( 'wp-pot', [ 'clean:pot' ], () =>
     .pipe( plumber( {'errorHandler': handleErrors} ) )
     .pipe( sort() )
     .pipe( wpPot( {
-      'domain': '_s',
-      'package': '_s'
+      'domain': 'acorn',
+      'package': 'acorn'
     } ) )
-    .pipe( gulp.dest( 'languages/_s.pot' ) )
+    .pipe( gulp.dest( 'languages/acorn.pot' ) )
 );
 
 /**
@@ -272,7 +272,7 @@ gulp.task( 'watch', function() {
   browserSync( {
     'open': false,             // Open project in a new tab?
     'injectChanges': true,     // Auto inject changes instead of full reload.
-    'proxy': 'wordpress.dev',         // Use http://_s.dev:3000 to use BrowserSync.
+    'proxy': 'https://wordpress.test',
     'watchOptions': {
       'debounceDelay': 500  // Wait 1 second before injecting.
     }
@@ -289,9 +289,8 @@ gulp.task( 'watch', function() {
  * Create individual tasks.
  */
 gulp.task( 'markup', browserSync.reload );
-gulp.task( 'i18n', [ 'wp-pot' ] );
 gulp.task( 'icons', [ 'svg' ] );
 gulp.task( 'styles', [ 'cssnano' ] );
 gulp.task( 'theme', [ 'themenano' ] );
-gulp.task( 'lint', [ 'sass:lint', 'js:lint' ] );
+gulp.task( 'lint', [ 'sass:lint' ] );
 gulp.task( 'default', [ 'i18n', 'icons', 'styles' ] );
