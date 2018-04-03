@@ -43,8 +43,8 @@ require get_template_directory() . '/inc/scripts.php';
 /**
  * Setup Custom Endpoints
  */
-require get_template_directory() . '/inc/menu-endpoints.php';
-require get_template_directory() . '/inc/image-endpoints.php';
+require get_template_directory() . '/inc/endpoints/menu-endpoints.php';
+require get_template_directory() . '/inc/endpoints/image-endpoints.php';
 
 /**
  * Custom functions that act independently of the theme templates.

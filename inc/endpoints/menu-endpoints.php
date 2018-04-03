@@ -26,20 +26,20 @@ function acorn_theme_get_all_menus() {
 		$date = $menu[0]->post_modified;
 
 		// Setup Anonymous Object.
-		$object = new stdClass;
+		$object = new stdClass();
 
 		// Add Modified Date.
 		$object->menu_modified = $date;
 
 		// Get slug and Description.
-		$object->slug  = $slug;
-		$object->id    = $id;
+		$object->slug = $slug;
+		$object->id   = $id;
 
 		$items = [];
 
 		// Inject items array into output.
-		$menu          = get_term( $id );
-		$menu->items   = wp_get_nav_menu_items( $menu->term_id );
+		$menu        = get_term( $id );
+		$menu->items = wp_get_nav_menu_items( $menu->term_id );
 
 		$items = acorn_theme_get_menu_and_slug( $menu->items );
 
@@ -49,7 +49,7 @@ function acorn_theme_get_all_menus() {
 		}
 
 		// Add objects to array.
-		$menus[]       = $object;
+		$menus[] = $object;
 	}
 
 	return $menus;
@@ -68,9 +68,9 @@ function acorn_theme_get_menu_and_slug( $items ) {
 
 	foreach ( $items as $item ) {
 
-		$post_id        = $item->ID;
-		$post_object    = get_post( $post_id );
-		$slug           = '';
+		$post_id     = $item->ID;
+		$post_object = get_post( $post_id );
+		$slug        = '';
 
 		// Only output a value if we're NOT the homepage.
 		if ( get_option( 'page_on_front' ) !== $item->object_id ) {
@@ -87,19 +87,21 @@ function acorn_theme_get_menu_and_slug( $items ) {
 /**
  * Get menu data from by id
  *
- * @param  array $data WP REST API data variable
- * @return object Menu's data with his items
- * @since 1.0.0
+ * @param  array $data WP REST API data variable.
+ * @return object Menu's data with his items.
+ * @since 0.0.1
  */
 function acorn_theme_get_menu_json_object_by_id( $data ) {
 
 	// Setup anonymous object.
-	$menu        = new stdClass;
+	$menu = new stdClass();
 
-	// Setup array for items.a
+	// Setup array for items.
 	$menu->items = [];
 
-	if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $data['id'] ] ) ) {
+	$locations = get_nav_menu_locations();
+
+	if ( ! empty( $locations[ $location ] ) && isset( $locations[ $data['id'] ] ) ) {
 
 		$menu        = get_term( $locations[ $data['id'] ] );
 		$menu->items = wp_get_nav_menu_items( $menu->term_id );
@@ -119,12 +121,14 @@ function acorn_theme_get_menu_json_object_by_id( $data ) {
 function acorn_theme_get_menu_json_object_by_slug( $data ) {
 
 	// Setup anonymous object.
-	$menu        = new stdClass;
+	$menu = new stdClass();
 
 	// Setup array for items.
 	$menu->items = [];
 
-	if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $data['slug'] ] ) ) {
+	$locations = get_nav_menu_locations();
+
+	if ( ! empty( $locations[ $location ] ) && isset( $locations[ $data['slug'] ] ) ) {
 
 		$menu        = get_term( $locations[ $data['slug'] ] );
 		$menu_slug   = get_nav_menu_locations()->$menu->slug;
