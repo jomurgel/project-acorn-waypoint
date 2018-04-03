@@ -5,16 +5,16 @@
 
 #### Added
 - Changelog
+- screenshot.png
+- Comment removal
 
 #### Changed
-- General PHPCS linting and cleanup.
 - Updated READEME.md
-
-#### Deprecated
-
-#### Removed
+- Moves custom endpoints into folder inside `inc`
+- gulpfile.js cleanup
 
 #### Fixed
+- General PHPCS linting and cleanup
 
 ## Initial Release
 ### [0.0.1](https://github.com/jomurgel/project-acorn/tree/0.0.1) (2018-02-24)
