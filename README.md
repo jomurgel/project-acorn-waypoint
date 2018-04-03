@@ -125,6 +125,10 @@ When logged in the index provides at-a-glance output of the REST API and out cus
 
 ![screencapture-wordpress-test-2018-04-03-12_54_13](https://user-images.githubusercontent.com/5230729/38269616-3e553e38-373e-11e8-918f-a64d2ea51016.png)
 
+Added a Acorn theme for use with users. Simply activate under `Profile` > `Admin Color Scheme`.
+
+![screenshot 2018-04-03 16 24 51](https://user-images.githubusercontent.com/5230729/38278985-91ea0c82-375b-11e8-9071-e30dc45d4632.jpg)
+
 ## Recommended Add-on Plugins
 - [WP REST API Cache](https://wordpress.org/plugins/wp-rest-api-cache/).
 
