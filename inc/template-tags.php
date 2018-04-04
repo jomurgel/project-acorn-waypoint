@@ -25,12 +25,12 @@ function acorn_get_svg( $args = array() ) {
 
 	// Make sure $args are an array.
 	if ( empty( $args ) ) {
-		return __( 'Please define default parameters in the form of an array.', 'twentyseventeen' );
+		return __( 'Please define default parameters in the form of an array.', 'acorn' );
 	}
 
 	// Define an icon.
 	if ( false === array_key_exists( 'icon', $args ) ) {
-		return __( 'Please define an SVG icon filename.', 'twentyseventeen' );
+		return __( 'Please define an SVG icon filename.', 'acorn' );
 	}
 
 	// Set defaults.
