@@ -293,4 +293,4 @@ gulp.task( 'icons', [ 'svg' ] );
 gulp.task( 'styles', [ 'cssnano' ] );
 gulp.task( 'theme', [ 'themenano' ] );
 gulp.task( 'lint', [ 'sass:lint' ] );
-gulp.task( 'default', [ 'i18n', 'icons', 'styles' ] );
+gulp.task( 'default', [ 'icons', 'styles' ] );
