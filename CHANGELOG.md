@@ -1,5 +1,14 @@
 # Change Log
 
+## CPT Support
+### [0.1.1](https://github.com/jomurgel/project-acorn/tree/0.1.1) (2018-08-31)
+
+#### Added
+- Custom Post Type Registration
+
+#### Changed
+- Updated dependencies.
+
 ## Updates
 ### [0.1.0](https://github.com/jomurgel/project-acorn/tree/0.1.0) (2018-03-03)
 

@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Project Acorn + Vue.js</h1>
 <p align="center">
-	<img src="https://img.shields.io/badge/version-0.1.0-green.svg" alt="Version 0.1.1" />
+	<img src="https://img.shields.io/badge/version-0.1.1-green.svg" alt="Version 0.1.1" />
 </p>
 
 A theme waypoint between WordPress, its REST API and the [Project Acorn SSR](https://github.com/jomurgel/project-acorn-ssr).
