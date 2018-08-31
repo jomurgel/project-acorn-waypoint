@@ -117,7 +117,7 @@ It's a miss that the WordPress REST API isn't available by default. I've added a
 - Base styles with [skeleton.scss](http://getskeleton.com/).
 
 ### Custom Post Type
-Added [CPT](https://github.com/jomurgel/project-acorn/blob/master/inc/cpt) file which provides the ability to quickly register multiple CPTs on the fly.
+Added [CPT](https://github.com/jomurgel/project-acorn/blob/master/inc/cpt.php) file which provides the ability to quickly register multiple CPTs on the fly.
 
 ### Extras
 This theme removes the customizer functionality, because who needs it, I mean, really? The code was forked and updated from [Customizer Remove All Parts](https://github.com/parallelus/customizer-remove-all-parts).
