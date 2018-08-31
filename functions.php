@@ -19,9 +19,11 @@ if ( ! function_exists( 'acorn_theme_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Function_Reference/register_nav_menus
 		 */
-		register_nav_menus( array(
-			'main' => esc_html__( 'Main Menu', 'acorn' ),
-		) );
+		register_nav_menus(
+			 array(
+				 'main' => esc_html__( 'Main Menu', 'acorn' ),
+			 )
+			);
 
 		/**
 		 * Enable support for Post Thumbnails on posts and pages.
@@ -50,6 +52,11 @@ require get_template_directory() . '/inc/endpoints/image-endpoints.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+/**
+ * Custom post types and taxonomies.
+ */
+require get_template_directory() . '/inc/cpt.php';
 
 /**
  * Custom hooks.
