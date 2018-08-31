@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Project Acorn + Vue.js</h1>
 <p align="center">
-	<img src="https://img.shields.io/badge/version-0.1.0-green.svg" alt="Version 0.1.0" />
+	<img src="https://img.shields.io/badge/version-0.1.0-green.svg" alt="Version 0.1.1" />
 </p>
 
 A theme waypoint between WordPress, its REST API and the [Project Acorn SSR](https://github.com/jomurgel/project-acorn-ssr).
@@ -115,6 +115,9 @@ It's a miss that the WordPress REST API isn't available by default. I've added a
 ### Styles
 - Style Reset with [sanitize.scss](https://jonathantneal.github.io/sanitize.css/).
 - Base styles with [skeleton.scss](http://getskeleton.com/).
+
+### Custom Post Type
+Added [CPT](https://github.com/jomurgel/project-acorn/blob/master/inc/cpt) file which provides the ability to quickly register multiple CPTs on the fly.
 
 ### Extras
 This theme removes the customizer functionality, because who needs it, I mean, really? The code was forked and updated from [Customizer Remove All Parts](https://github.com/parallelus/customizer-remove-all-parts).
